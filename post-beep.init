@@ -13,8 +13,8 @@
 
 case "$1" in
   start|"")
-    echo "A-3 24" | /home/pi/PWMTone/PWMTone
-    #/home/pi/PWMTone/PWMTone < /home/pi/PWMTone/NothingElseMattersTracker.txt > /dev/null &
+    echo "A-3 24" | /home/pi/PiPWMTone/PiPWMTone
+    #/home/pi/PiPWMTone/PiPWMTone < /home/pi/PiPWMTone/NothingElseMattersTracker.txt > /dev/null &
     exit 0
     ;;
   restart|reload|force-reload)
