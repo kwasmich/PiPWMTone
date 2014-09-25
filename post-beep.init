@@ -1,0 +1,35 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          post-beep
+# Required-Start:    fake-hwclock
+# Required-Stop:
+# Should-Start:
+# Default-Start:     S
+# Default-Stop:      0 1 6
+# X-Start-Before:    udev
+# Short-Description: Fake POST beep
+# Description:       Fake POST beep
+### END INIT INFO
+
+case "$1" in
+  start|"")
+    echo "A-3 24" | /home/pi/PWMTone/PWMTone
+    #/home/pi/PWMTone/PWMTone < /home/pi/PWMTone/NothingElseMattersTracker.txt > /dev/null &
+    exit 0
+    ;;
+  restart|reload|force-reload)
+    echo "Error: argument '$1' not supported" >&2
+    exit 3
+    ;;
+  stop)
+    exit 0
+    ;;
+  status)
+    exit 0
+    ;;
+  *)
+    echo "Usage: bootscreen_start [start|stop]" >&2
+    exit 3
+    ;;
+esac
+

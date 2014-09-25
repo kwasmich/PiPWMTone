@@ -1,0 +1,24 @@
+# Atari 800XL
+G-1 6
+F-1 6
+A#1 6
+C-2 12
+F-2 12
+D-2 6
+
+
+# POST Beep
+A-3 24
+
+
+# AntiVir
+C-4 12
+F-4 32
+A#4 32
+
+# AntiVir 2
+C-4 48
+F-3 48
+D-4 48
+
+
